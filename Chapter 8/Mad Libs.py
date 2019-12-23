@@ -1,8 +1,11 @@
-#mad libs.py
+# mad libs.py
 # Author: Tan Yi Xiang
 # Source: Automate the Boring stuff with python Ch. 8 Project
 
 import re
+
+"""Reads in text files and lets the user add their own text anywhere 
+the word ADJECTIVE, NOUN, ADVERB, or VERB appears in the text file."""
 
 ADJECTIVE = 'ADJECTIVE'
 VERB = 'VERB'
@@ -48,7 +51,7 @@ def changeKeywords(madLibsString):
 
 
 madLibsFile = open('Mad Libs.txt')
-madLibsAnswer = open('Mad Libs Ans.txt','w')
+madLibsAnswer = open('Mad Libs Ans.txt', 'w')
 madLibsContent = madLibsFile.read()
 replacementString = changeKeywords(madLibsContent)
 madLibsAnswer.write(replacementString)
