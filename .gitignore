@@ -1,5 +1,5 @@
 .idea
 .xml
 .iml
-.log
-.xlsx
+*.log
+*.xlsx
